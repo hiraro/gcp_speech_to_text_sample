@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "GOOGLE_APPLICATION_CREDENTIALS=$PWD/google_cloud_speech_service_account.json node app.js"
+    "start": "MICROPHONE=1 DEBUG_MODE=0 GOOGLE_APPLICATION_CREDENTIALS=$PWD/google_cloud_speech_service_account.json node app.js",
+    "debug": "DEBUG_MODE=1 GOOGLE_APPLICATION_CREDENTIALS=$PWD/google_cloud_speech_service_account.json node app.js"
   },
   "license": "ISC",
   "dependencies": {
